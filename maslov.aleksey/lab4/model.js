@@ -55,10 +55,10 @@ export function groupProductsByPriceRange(products, ranges = PRICE_RANGES) {
   return groups;
 }
 
-export function getProductsByCategory(products, category) {
+export function findProductsByCategory(products, category) {
   return products.filter((p) => p.categories.includes(category));
 }
 
-export function getProductsAbovePrice(products, price) {
+export function findProductsAbovePrice(products, price) {
   return products.filter((p) => p.price > price);
 }
