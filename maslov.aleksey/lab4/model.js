@@ -45,7 +45,7 @@ const PRICE_RANGES = [
   {label: '5000+', min: 5000, max: Infinity},
 ];
 
-export function groupByPriceRange(products, ranges = PRICE_RANGES) {
+export function groupProductsByPriceRange(products, ranges = PRICE_RANGES) {
   const groups = {};
   for (const r of ranges) {
     groups[r.label] = products.filter(
