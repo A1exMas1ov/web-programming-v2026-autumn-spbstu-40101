@@ -7,13 +7,14 @@ export class Product {
   }
 
   addCategory(category) {
-    if (!this.categories.includes(category)) {
-      this.categories.push(category);
+    const c = category.trim();
+    if (c && !this.categories.includes(c)) {
+      this.categories.push(c);
     }
   }
 
   removeCategory(category) {
-    this.categories = this.categories.filter(c => c !== category);
+    this.categories = this.categories.filter((c) => c !== category);
   }
 
   get categoryCount() {
@@ -35,27 +36,29 @@ export function groupByCategory(products) {
 }
 
 export function getUniqueCategories(products) {
-  return [...new Set(products.flatMap(p => p.categories))].sort();
+  return [...new Set(products.flatMap((p) => p.categories))].sort();
 }
 
 const PRICE_RANGES = [
-  {label: "0-1000", min: 0, max: 1000},
-  {label: "1000–5000", min: 1000, max: 5000},
-  {label: "5000+", min: 5000, max: Infinity}
+  {label: '0-1000', min: 0, max: 1000},
+  {label: '1000–5000', min: 1000, max: 5000},
+  {label: '5000+', min: 5000, max: Infinity},
 ];
 
 export function groupByPriceRange(products, ranges = PRICE_RANGES) {
   const groups = {};
   for (const r of ranges) {
-    groups[r.label] = products.filter(p => p.price >= r.min && p.price < r.max);
+    groups[r.label] = products.filter(
+      (p) => p.price >= r.min && p.price < r.max,
+    );
   }
   return groups;
 }
 
 export function getProductsByCategory(products, category) {
-  return products.filter(p => p.categories.includes(category));
+  return products.filter((p) => p.categories.includes(category));
 }
 
 export function getProductsAbovePrice(products, price) {
-  return products.filter(p => p.price > price);
+  return products.filter((p) => p.price > price);
 }
