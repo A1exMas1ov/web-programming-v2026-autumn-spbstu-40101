@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Favorites({ books, onRemove }) {
+function Favorites({books, onRemove}) {
   return (
     <section className="favorites" data-testid="favorites">
       <h2>

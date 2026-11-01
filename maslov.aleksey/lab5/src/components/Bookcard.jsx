@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BookCard({ book, isFavorite, onToggle }) {
+function BookCard({book, isFavorite, onToggle}) {
   return (
     <article className="card" data-testid="book-card">
       <img src={book.cover} alt={`Обложка: ${book.title}`} width="90" />

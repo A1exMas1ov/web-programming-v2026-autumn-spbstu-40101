@@ -23,6 +23,6 @@ body {
   margin-bottom: 5px;
 }
 
-button.active {
+.active {
   background: gold;
 }

@@ -11,7 +11,8 @@ const data = [
     rating: 4.8,
     price: 890,
     color: '#8b3a3a',
-    description: 'Роман-эпопея о судьбах нескольких семей во время войны с Наполеоном.',
+    description:
+      'Роман-эпопея о судьбах нескольких семей во время войны с Наполеоном.',
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ const data = [
     rating: 4.9,
     price: 610,
     color: '#2f6b4f',
-    description: 'Москва 1930-х, визит дьявола и история любви Мастера и Маргариты.',
+    description:
+      'Москва 1930-х, визит дьявола и история любви Мастера и Маргариты.',
   },
   {
     id: 4,
@@ -51,10 +53,11 @@ const data = [
     rating: 4.7,
     price: 570,
     color: '#3a6b7a',
-    description: 'Трагическая история любви замужней женщины в высшем обществе.',
+    description:
+      'Трагическая история любви замужней женщины в высшем обществе.',
   },
 ];
 
-const books = data.map((b) => ({ ...b, cover: makeCover(b.title, b.color) }));
+const books = data.map((b) => ({...b, cover: makeCover(b.title, b.color)}));
 
 export default books;
