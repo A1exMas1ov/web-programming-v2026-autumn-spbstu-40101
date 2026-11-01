@@ -1,10 +1,7 @@
-import {StrictMode} from 'react';
+import React, {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
+import App from './App.jsx';
 import './styles.css';
-
-function App() {
-  return <h1>Замените этот компонент решением своего варианта</h1>;
-}
 
 const rootElement = document.querySelector('[data-testid="app"]');
 
