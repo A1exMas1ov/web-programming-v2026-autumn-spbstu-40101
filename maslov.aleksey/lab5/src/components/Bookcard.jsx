@@ -3,7 +3,7 @@ import React from 'react';
 function BookCard({book, isFavorite, onToggle}) {
   return (
     <article className="card" data-testid="book-card">
-      <img src={book.cover} alt={`Обложка: ${book.title}`} width="90" />
+      <img src={book.cover} alt={`Обложка: ${book.title}`} width="130" />
       <div>
         <h3>{book.title}</h3>
         <p>Рейтинг: {book.rating}</p>
