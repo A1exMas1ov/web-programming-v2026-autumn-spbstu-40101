@@ -6,7 +6,7 @@ const data = [
     price: 890,
     description:
       'Роман-эпопея о судьбах нескольких семей во время войны с Наполеоном.',
-    cover: '/covers/war-and-peace.jpg',
+    cover: '../assets/covers/war-and-peace.jpg',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const data = [
     price: 1500,
     description:
       'Первый роман в эпической фэнтези-саге «Песнь льда и огня» американского писателя Джорджа Р. Р. Мартина, впервые опубликованный в 1996 году.',
-    cover: '/covers/game-of-thrones.jpg',
+    cover: '../assets/covers/game-of-thrones.jpg',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const data = [
     price: 610,
     description:
       'Москва 1930-х, визит дьявола и история любви Мастера и Маргариты.',
-    cover: '/covers/master-and-margarita.jpg',
+    cover: '../assets/covers/master-and-margarita.jpg',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const data = [
     price: 350,
     description:
       'Один из самых известных романов русского классика Федора Достоевского, первое произведение из его «великого пятикнижия»',
-    cover: '/covers/crime-and-punishment.jpg',
+    cover: '../assets/covers/crime-and-punishment.jpg',
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ const data = [
     rating: 4.7,
     price: 3800,
     description: 'Третья книга Джоан Роулинг из серии романов о Гарри Поттере.',
-    cover: '/covers/harry-potter.jpg',
+    cover: '../assets/covers/harry-potter.jpg',
   },
 ];
 
